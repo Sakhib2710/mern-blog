@@ -16,18 +16,18 @@ function Dashboard() {
   }, [location.search]);
 
   return (
-    <div className='min-h-screen flex md:flex-row'>
-     <div className='md:w-56'>
-      {/* sidebar */}
-      <DashSidebar/>
-     </div>
+    <div className="min-h-screen flex flex-col md:flex-row">
+      <div className="md:w-56">
+        {/* sidebar */}
+        <DashSidebar />
+      </div>
 
-     <div className="">
-      {/* {profile} */}
-      {tab==='profile' && <DashProfile/>}
-     </div>
+      <div className="w-full">
+        {/* {profile} */}
+        {tab === "profile" && <DashProfile />}
+      </div>
     </div>
-  )
+  );
 }
 
 export default Dashboard
